@@ -1,0 +1,15 @@
+import sys
+
+if len(sys.argv) == 3:
+    initial_balance = float(sys.argv[1])
+    deposit_amount = float(sys.argv[2])
+else:
+    print("No input given - using default values")
+    initial_balance = 1000.0
+    deposit_amount = 500.0
+
+updated_balance = initial_balance + deposit_amount
+
+print("Initial Balance:", initial_balance)
+print("Deposit Amount:", deposit_amount)
+print("Updated Balance:", updated_balance)
