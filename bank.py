@@ -1,6 +1,7 @@
 import sys
 
 if len(sys.argv) == 3:
+    script_name=sys.argv[0]
     initial_balance = float(sys.argv[1])
     deposit_amount = float(sys.argv[2])
 else:
