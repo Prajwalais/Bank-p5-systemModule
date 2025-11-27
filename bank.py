@@ -1,16 +1,14 @@
 import sys
 
-if len(sys.argv) == 3:
-    script_name=sys.argv[0]
-    initial_balance = float(sys.argv[1])
-    deposit_amount = float(sys.argv[2])
+if len(sys.argv) >= 3:
+  script_name = sys.argv[0]
+  initial = sys.argv[1]
+  deposit = sys.argv[2]
 else:
-    print("No input given - using default values")
-    initial_balance = 1000.0
-    deposit_amount = 500.0
-
-updated_balance = initial_balance + deposit_amount
-
-print("Initial Balance:", initial_balance)
-print("Deposit Amount:", deposit_amount)
-print("Updated Balance:", updated_balance)
+  script_name = sys.argv[0]
+  initial= 1500
+  deposit=2000
+balance=initial + deposit
+print("initial Amount:",initial)
+print("deposit Amount:",deposit)
+print("Balance Amount:",balance)
